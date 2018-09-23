@@ -25,6 +25,24 @@ function irabako_theme_customize_register( $wp_customize ) {
 			'render_callback' => 'irabako_theme_customize_partial_blogdescription',
 		) );
 	}
+
+	// フロントページ設定セクション
+	$wp_customize->add_section('irabako_theme_frontpage', array(
+		'title' => 'フロントページ設定',
+		'priority'   => 195
+	));
+	// 開催実績
+	$wp_customize->add_setting('irabako_theme_options[past_event]', array(
+		'default'   => '',
+		'type'      => 'theme_mod',
+		'transport' => 'postMessage'
+	));
+	$wp_customize->add_control('irabako_theme_options_past_event', array(
+		'settings'  => 'irabako_theme_options[past_event]',
+		'label'     => '開催実績',
+		'section'   => 'irabako_theme_frontpage',
+		'type'      => 'textarea',
+	));
 }
 add_action( 'customize_register', 'irabako_theme_customize_register' );
 
