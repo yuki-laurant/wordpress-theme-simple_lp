@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package irabako
+ * @package simple_lp
  */
 
 ?>
@@ -15,16 +15,16 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'irabako-theme' ) ); ?>">
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'simple_lp-theme' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'irabako-theme' ), 'WordPress' );
+				printf( esc_html__( 'Proudly powered by %s', 'simple_lp-theme' ), 'WordPress' );
 				?>
 			</a>
 			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'irabako-theme' ), 'irabako-theme', '<a href="https://irabako.bibicoart.com">bibico</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'simple_lp-theme' ), 'simple_lp-theme', '<a href="https://simple_lp.bibicoart.com">bibico</a>' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

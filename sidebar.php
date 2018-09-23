@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package irabako
+ * @package simple_lp
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

@@ -1,7 +1,7 @@
 {
-  "name": "irabako-theme",
+  "name": "simple_lp-theme",
   "version": "1.0.0",
-  "description": "irabako original theme",
+  "description": "simple_lp original theme",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package irabako
+ * @package simple_lp
  */
 
 get_header();

@@ -9,7 +9,7 @@ var plumber = require("gulp-plumber");
 var js_globs = ["js/**/*.js", "!js/min/**/*.js"];
 var sass_globs = ["sass/**/*.scss"];
 var php_globs = ["**/*.php"];
-var testsite = "irabako.loc";
+var testsite = "simple_lp.loc";
 
 // CSS生成
 gulp.task("sass", function() {

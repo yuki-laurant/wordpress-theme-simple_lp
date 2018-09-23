@@ -8,33 +8,33 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package irabako
+ * @package simple_lp
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses irabako_theme_header_style()
+ * @uses simple_lp_theme_header_style()
  */
-function irabako_theme_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'irabako_theme_custom_header_args', array(
+function simple_lp_theme_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'simple_lp_theme_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'irabako_theme_header_style',
+		'wp-head-callback'       => 'simple_lp_theme_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'irabako_theme_custom_header_setup' );
+add_action( 'after_setup_theme', 'simple_lp_theme_custom_header_setup' );
 
-if ( ! function_exists( 'irabako_theme_header_style' ) ) :
+if ( ! function_exists( 'simple_lp_theme_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see irabako_theme_custom_header_setup().
+	 * @see simple_lp_theme_custom_header_setup().
 	 */
-	function irabako_theme_header_style() {
+	function simple_lp_theme_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*
