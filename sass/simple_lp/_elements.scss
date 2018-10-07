@@ -1,0 +1,146 @@
+// リボン--
+.ribbon {
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  filter: drop-shadow($color__shadow);
+  &::before {
+    content: '';
+    border-top: #{$size__ribbon-height / 2} $color__text-bluehead solid;
+    border-left: #{$size__ribbon-height / 2} transparent solid;
+    border-bottom: #{$size__ribbon-height / 2} $color__text-bluehead solid;
+  }
+  &::after {
+    content: '';
+    border-top: #{$size__ribbon-height / 2} $color__text-bluehead solid;
+    border-right: #{$size__ribbon-height / 2} transparent solid;
+    border-bottom: #{$size__ribbon-height / 2} $color__text-bluehead solid;
+  }
+  .text {
+    width: $size__ribbon-width;
+    height: $size__ribbon-height;
+    background: $color__text-bluehead;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+// --リボン
+
+// ボタン--
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 0.5em 3.5em;
+  color: #fff;
+  background: #f064a5;
+  border-radius: .5em;
+  &::after {
+    position: absolute;
+    content: "\f138";
+    font-weight: 900;
+    right: 1em;
+  }
+}
+.btn-link {
+  text-decoration: none;
+  &:link, &:visited, &:hover, &:active {
+    color: #fff;
+  }
+}
+// --ボタン
+
+// マーカー--
+.marker.yellow {
+  background: linear-gradient(transparent 60%, #fff293 60%);
+}
+// --マーカー
+
+// ルビ--
+.ruby {
+  text-align: center;
+  line-height: 1;
+  .rt {
+    @include font-size(0.6);
+    letter-spacing: .4em;
+    margin: 0 0 .4em;
+  }
+  .rb {
+    @include font-size(1.2);
+    letter-spacing: .2em;
+    margin: 0;
+  }
+}
+// --ルビ
+
+// トライアングル--
+.tri {
+  position: relative;
+  width: 100%;
+  height: $size__tri-height;
+  overflow: hidden;
+  &.top-left::before {
+    position: absolute;
+    content: '';
+    border-top: $size__tri-height $color__background-cream solid;
+    border-right: 100vw transparent solid;
+  }
+  &.right-bottom::before {
+    position: absolute;
+    content: '';
+    border-bottom: $size__tri-height $color__background-cream solid;
+    border-left: 100vw transparent solid;
+  }
+}
+// --トライアングル
+
+// チェック型リスト--
+.list-check {
+  list-style: none;
+  padding-left: 1.5em;
+  li {
+    position: relative;
+  }
+  li::before {
+    position: absolute;
+    content: '\f00c';
+    font-weight: 900;
+    top: 0;
+    left: -1.5em;
+    color: $color__text-bluehead;
+  }
+}
+// --チェック型リスト
+
+// 吹き出し--
+.balloon {
+  // 左上--
+  &.top-left {
+    position: relative;
+    border: 1px solid $color__text-main;
+    background: $color__balloon-bg;
+    border-radius: .5rem;
+    padding: 0.5rem 1.2rem;
+    margin-top: 20px;
+  }
+  &.top-left::before, &.top-left::after {
+    position: absolute;
+    content: '';
+    left: 1rem;
+    width: 0;
+    height: 0;
+    border-right: #{$size__balloon-thick / 2} solid transparent;
+    border-bottom: $size__balloon-length solid $color__text-main;
+    border-left: #{$size__balloon-thick / 2} solid transparent;
+  }
+  &.top-left::before {
+    top: -20px;
+  }
+  &.top-left::after {
+    top: -18px;
+    border-bottom: $size__balloon-length solid $color__balloon-bg;
+  }
+  // --左上
+}
+// --吹き出し

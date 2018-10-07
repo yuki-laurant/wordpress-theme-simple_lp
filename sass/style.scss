@@ -1,6 +1,6 @@
 /*!
 Theme Name: Simple LP Theme
-Theme URI: https://bibicoart.com
+Theme URI: https://github.com/yuki-laurant/wordpress-theme-simple_lp
 Author: yuki
 Author URI: https://github.com/yuki-laurant
 Description: For single column simple LP theme.
@@ -41,6 +41,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Media
 	## Captions
 	## Galleries
+# SimpleLP Style
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
@@ -104,3 +105,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Media
 --------------------------------------------------------------*/
 @import "media/media";
+
+/*--------------------------------------------------------------
+# SimpleLP Style
+--------------------------------------------------------------*/
+@import "simple_lp/simple_lp";

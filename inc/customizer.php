@@ -34,8 +34,7 @@ function simple_lp_theme_customize_register( $wp_customize ) {
 	// 開催実績
 	$wp_customize->add_setting('simple_lp_theme_options[past_event]', array(
 		'default'   => '',
-		'type'      => 'theme_mod',
-		'transport' => 'postMessage'
+		'type'      => 'theme_mod'
 	));
 	$wp_customize->add_control('simple_lp_theme_options_past_event', array(
 		'settings'  => 'simple_lp_theme_options[past_event]',

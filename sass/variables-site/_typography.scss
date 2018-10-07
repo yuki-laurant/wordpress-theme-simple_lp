@@ -1,5 +1,8 @@
-$font__main: sans-serif;
+$font__main: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif, "Font Awesome 5 Free";
+$font__weight: 500;
+$font__spacing: .1em;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
-$font__line-height-body: 1.5;
-$font__line-height-pre: 1.6;
+$font__line-height-body: 1.75;
+$font__line-height-pre: 1.8;
+$font__line-height-head: 1.5;
