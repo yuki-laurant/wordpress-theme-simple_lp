@@ -1311,6 +1311,8 @@ object {
       margin: .2rem; }
     .overview .paper ul {
       margin-left: 0; }
+      .overview .paper ul li {
+        padding-left: 1.5em; }
     .overview .paper .timetable {
       width: 96%;
       list-style: none;
