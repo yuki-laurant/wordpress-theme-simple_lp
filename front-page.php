@@ -6,7 +6,13 @@
  *
  * @package simple_lp
  */
+
+// カスタマイザ設定取得
 $opts = get_theme_mod('simple_lp_theme_options');
+$startdate = new DateTime($opts['start_date']);
+$enddate = new DateTime($opts['start_date']);
+$enddate->modify('+'. $opts['duration_minutes'] .' minutes');
+
 get_header();
 ?>
 
@@ -15,7 +21,7 @@ get_header();
 			<section class="top-image">
 				<img width="750" height="1200" alt="" src="<?php echo get_template_directory_uri(); ?>/images/top.png">
 				<div class="lead">
-					<p><strong>9.15</strong>SAT</p>
+					<p><strong><?php echo $startdate->format('n.j'); ?></strong><?php echo strtoupper($startdate->format('D')); ?></p>
 					<p>初心者から上級者まで集まる</p>
 					<p>イラストレーター交流会</p>
 				</div>
@@ -28,13 +34,17 @@ get_header();
 							<h2 class="rb">お知らせ</h2>
 						</div>
 					</header>
-					<p class="title">第5回イラストレーター交流会開催</p>
-					<p class="date">次回開催9月15日(土)</p>
-					<p class="time">13:00〜16:00</p>
+					<p class="title"><?php echo $opts['past_count']; ?></p>
+					<p class="date">次回開催<?php echo $startdate->format('n月j日'); ?>(<?php echo $wp_locale->get_weekday_abbrev($wp_locale->get_weekday($startdate->format('w'))); ?>)</p>
+					<p class="time"><?php echo $startdate->format('H:i'); ?>〜<?php echo $enddate->format('H:i'); ?></p>
 					<div class="btn-wrap">
-						<a class="btn btn-link" href="https://www.google.co.jp">お申込みはこちら</a>
+						<a class="btn btn-link" href="<?php echo $opts['contact_url']; ?>">お申込みはこちら</a>
 					</div>
-					<p class="seat"><span class="marker yellow">定員になりました</span></p>
+					<div class="gauge">
+						<div id="seat-bar" style="right: <?php echo ((1 - $opts['seat_remain'] / $opts['seat_limit']) * 100); ?>%"></div>
+						<p class="count"><strong><?php echo $opts['seat_remain']; ?>/<?php echo $opts['seat_limit']; ?></strong>人</p>
+					</div>
+					
 				</div>
 			</section><!-- .news -->
 			<section class="about-us">
@@ -233,6 +243,17 @@ get_header();
 					<p class="answer">当交流会には人見知りの方も多くいらっしゃいますが、皆様終わる頃には笑顔で帰られています。どうぞご安心ください！</p>
 				</div>
 			</section><!-- .qanda -->
+			<section class="past">
+				<header class="ribbon">
+					<div class="text ruby">
+						<div class="rt">PASTEVENT</div>
+						<h2 class="rb">開催実績</h2>
+					</div>
+				</header>
+				<div class="paper">
+					<p><?php echo nl2br($opts['past_event']); ?></p>
+				</div>
+			</section><!-- .past -->
 			<section class="overview">
 				<div class="tri top-left"></div>
 				<header class="ribbon">
@@ -244,8 +265,8 @@ get_header();
 				<div class="paper">
 					<section>
 						<h3><span class="marker yellow">日時</span></h3>
-						<p class="date">2018.9.15</p>
-						<p class="time">13:00&nbsp;〜&nbsp;16:00</p>
+						<p class="date"><?php echo $startdate->format('Y.n.j'); ?></p>
+						<p class="time"><?php echo $startdate->format('H:i'); ?>&nbsp;〜&nbsp;<?php echo $enddate->format('H:i'); ?></p>
 					</section>
 					<section>
 						<h3><span class="marker yellow">開催場所</span></h3>
@@ -272,11 +293,14 @@ get_header();
 					<section>
 						<h3><span class="marker yellow">タイムテーブル</span></h3>
 						<ul class="timetable">
-							<li>13:00&nbsp;&nbsp;受付開始</li>
-							<li>13:10&nbsp;&nbsp;オープニングトーク</li>
-							<li>13:20&nbsp;&nbsp;交流会スタート</li>
-							<li>15:55&nbsp;&nbsp;終わりの挨拶</li>
-							<li>16:00&nbsp;&nbsp;解散</li>
+							<?php
+								$items = explode("\n", $opts['time_table']);
+								for($i = 0, $len = count($items); $i < $len; $i++):
+								?>
+									<li><?php echo preg_replace('/^(.+) +/s', '${1}&nbsp;&nbsp;', $items[$i]); ?></li>
+								<?php
+								endfor;
+							?>
 						</ul>
 						<small>※当日状況により前後する可能性がございます</small>
 					</section>
@@ -285,8 +309,8 @@ get_header();
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<div id="fix-btn">
-		<a class="btn btn-link" href="https://www.google.co.jp">お申込みはこちら</a>
+	<div id="fix-btn" style="opacity: 0; visibility: hidden;">
+		<a class="btn btn-link" href="<?php echo $opts['contact_url']; ?>"><img alt="" class="akane-sd" src="<?php echo get_template_directory_uri(); ?>/images/akane-sd.png" width="167" height="292">お申込みはこちら</a>
 	</div><!-- #fix-btn -->
 
 <?php

@@ -102,11 +102,45 @@
     }
     .btn-wrap {
       text-align: center;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.4rem;
     }
-    .seat {
-      @include font-size(1.1);
-      margin-bottom: 0;
+    .gauge {
+      position: relative;
+      width: 100%;
+      max-width: 16rem;
+      margin: 0 auto;
+      border: 1px solid #88b998;
+      border-radius: 4px;
+      margin-bottom: 0.8rem;
+      #seat-bar {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        &::before {
+          position: absolute;
+          content: '';
+          top: 0;
+          bottom: 0;
+          left: 0;
+          background: #82e2b3;
+          width: 0;
+          transition: width 1s ease-out;
+        }
+        &.on::before {
+          width: 100%;
+        }
+      }
+      .count {
+        position: relative;
+        @include font-size(0.6);
+        margin: 0;
+        padding: 0.2rem 0.4rem;
+        text-align: right;
+        strong {
+          @include font-size(0.9);
+        }  
+      }
     }
   }
 }
@@ -365,6 +399,16 @@
   }
 }
 
+.past {
+  .paper {
+    width: $size__paper-width;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: $color__shadow;
+    padding: 0.8rem 1rem;
+    margin: 1.4rem auto 4px;
+  }
+}
+
 .overview {
   background: url("./images/polygon.png") 85% bottom repeat;
   padding-bottom: 3rem;
@@ -446,7 +490,7 @@
 #fix-btn {
   position: fixed;
   right: 0;
-  bottom: 4px;
+  bottom: 0px;
   left: 0;
   text-align: center;
   @include font-size(1.2);
@@ -455,5 +499,12 @@
   .btn {
     padding-left: 5em;
     padding-right: 5em;
+    .akane-sd {
+      position: absolute;
+      width: 40px; 
+      left: 1.4em;
+      bottom: .2em;
+      // filter: drop-shadow(2px 0 0 rgba(245, 170, 195, 0.8));
+    }
   }
 }

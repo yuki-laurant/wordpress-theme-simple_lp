@@ -1041,11 +1041,41 @@ object {
     font-weight: bold; }
   .news .paper .btn-wrap {
     text-align: center;
-    margin-bottom: 0.5rem; }
-  .news .paper .seat {
-    font-size: 16.5px;
-    font-size: 1.03125rem;
-    margin-bottom: 0; }
+    margin-bottom: 0.4rem; }
+  .news .paper .gauge {
+    position: relative;
+    width: 100%;
+    max-width: 16rem;
+    margin: 0 auto;
+    border: 1px solid #88b998;
+    border-radius: 4px;
+    margin-bottom: 0.8rem; }
+    .news .paper .gauge #seat-bar {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0; }
+      .news .paper .gauge #seat-bar::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        bottom: 0;
+        left: 0;
+        background: #82e2b3;
+        width: 0;
+        transition: width 1s ease-out; }
+      .news .paper .gauge #seat-bar.on::before {
+        width: 100%; }
+    .news .paper .gauge .count {
+      position: relative;
+      font-size: 9px;
+      font-size: 0.5625rem;
+      margin: 0;
+      padding: 0.2rem 0.4rem;
+      text-align: right; }
+      .news .paper .gauge .count strong {
+        font-size: 13.5px;
+        font-size: 0.84375rem; }
 
 .about-us {
   background: url("./images/polygon.png") 85% bottom repeat; }
@@ -1240,6 +1270,13 @@ object {
   left: 0.8rem;
   background: #fff; }
 
+.past .paper {
+  width: 86%;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  padding: 0.8rem 1rem;
+  margin: 1.4rem auto 4px; }
+
 .overview {
   background: url("./images/polygon.png") 85% bottom repeat;
   padding-bottom: 3rem; }
@@ -1297,7 +1334,7 @@ object {
 #fix-btn {
   position: fixed;
   right: 0;
-  bottom: 4px;
+  bottom: 0px;
   left: 0;
   text-align: center;
   font-size: 18px;
@@ -1307,3 +1344,8 @@ object {
   #fix-btn .btn {
     padding-left: 5em;
     padding-right: 5em; }
+    #fix-btn .btn .akane-sd {
+      position: absolute;
+      width: 40px;
+      left: 1.4em;
+      bottom: .2em; }

@@ -31,6 +31,72 @@ function simple_lp_theme_customize_register( $wp_customize ) {
 		'title' => 'フロントページ設定',
 		'priority'   => 195
 	));
+	// 現在人数
+	$wp_customize->add_setting('simple_lp_theme_options[seat_remain]', array(
+		'default'   => '',
+		'type'      => 'theme_mod'
+	));
+	$wp_customize->add_control('simple_lp_theme_options_seat_remain', array(
+		'settings'  => 'simple_lp_theme_options[seat_remain]',
+		'label'     => '現在人数',
+		'section'   => 'simple_lp_theme_frontpage',
+		'type'      => 'number',
+	));
+	// 定員人数
+	$wp_customize->add_setting('simple_lp_theme_options[seat_limit]', array(
+		'default'   => '',
+		'type'      => 'theme_mod'
+	));
+	$wp_customize->add_control('simple_lp_theme_options_seat_limit', array(
+		'settings'  => 'simple_lp_theme_options[seat_limit]',
+		'label'     => '定員人数',
+		'section'   => 'simple_lp_theme_frontpage',
+		'type'      => 'number',
+	));
+	// 開催開始日時
+	$wp_customize->add_setting('simple_lp_theme_options[start_date]', array(
+		'default'   => '',
+		'type'      => 'theme_mod'
+	));
+	$wp_customize->add_control('simple_lp_theme_options_start_date', array(
+		'settings'  => 'simple_lp_theme_options[start_date]',
+		'label'     => '開催開始日時',
+		'section'   => 'simple_lp_theme_frontpage',
+		'type'      => 'date_time',
+	));
+	// 開催時間(m)
+	$wp_customize->add_setting('simple_lp_theme_options[duration_minutes]', array(
+		'default'   => '',
+		'type'      => 'theme_mod'
+	));
+	$wp_customize->add_control('simple_lp_theme_options_duration_minutes', array(
+		'settings'  => 'simple_lp_theme_options[duration_minutes]',
+		'label'     => '開催時間(minutes)',
+		'section'   => 'simple_lp_theme_frontpage',
+		'type'      => 'number',
+	));
+	// 開催名
+	$wp_customize->add_setting('simple_lp_theme_options[past_count]', array(
+		'default'   => '',
+		'type'      => 'theme_mod'
+	));
+	$wp_customize->add_control('simple_lp_theme_options_past_count', array(
+		'settings'  => 'simple_lp_theme_options[past_count]',
+		'label'     => '開催名',
+		'section'   => 'simple_lp_theme_frontpage',
+		'type'      => 'text',
+	));
+	// 問い合わせフォーム
+	$wp_customize->add_setting('simple_lp_theme_options[contact_url]', array(
+		'default'   => '',
+		'type'      => 'theme_mod'
+	));
+	$wp_customize->add_control('simple_lp_theme_options_contact_url', array(
+		'settings'  => 'simple_lp_theme_options[contact_url]',
+		'label'     => '問い合わせフォーム',
+		'section'   => 'simple_lp_theme_frontpage',
+		'type'      => 'url',
+	));
 	// 開催実績
 	$wp_customize->add_setting('simple_lp_theme_options[past_event]', array(
 		'default'   => '',
@@ -39,6 +105,17 @@ function simple_lp_theme_customize_register( $wp_customize ) {
 	$wp_customize->add_control('simple_lp_theme_options_past_event', array(
 		'settings'  => 'simple_lp_theme_options[past_event]',
 		'label'     => '開催実績',
+		'section'   => 'simple_lp_theme_frontpage',
+		'type'      => 'textarea',
+	));
+	// タイムテーブル
+	$wp_customize->add_setting('simple_lp_theme_options[time_table]', array(
+		'default'   => '',
+		'type'      => 'theme_mod'
+	));
+	$wp_customize->add_control('simple_lp_theme_options_time_table', array(
+		'settings'  => 'simple_lp_theme_options[time_table]',
+		'label'     => 'タイムテーブル',
 		'section'   => 'simple_lp_theme_frontpage',
 		'type'      => 'textarea',
 	));

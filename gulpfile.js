@@ -25,7 +25,7 @@ gulp.task("sass", function() {
 gulp.task("js", function() {
   gulp.src(js_globs)
       .pipe(plumber())
-      // .pipe(uglify())
+      .pipe(uglify())
       .pipe(gulp.dest("./js/min"))
       .pipe(browser.reload({stream:true}));
 });

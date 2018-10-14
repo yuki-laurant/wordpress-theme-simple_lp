@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yuki-laurant/wordpress-theme-simple_lp.git"
+    "url": "git+https://github.com/yuki-penguin/wordpress-theme-simple_lp.git"
   },
-  "author": "yuki-laurant",
+  "author": "yuki-penguin",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/yuki-laurant/wordpress-theme-simple_lp/issues"
+    "url": "https://github.com/yuki-penguin/wordpress-theme-simple_lp/issues"
   },
-  "homepage": "https://github.com/yuki-laurant/wordpress-theme-simple_lp#readme",
+  "homepage": "https://github.com/yuki-penguin/wordpress-theme-simple_lp#readme",
   "devDependencies": {
     "browser-sync": "^2.24.7",
     "gulp": "^3.9.1",
