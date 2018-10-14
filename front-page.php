@@ -41,7 +41,7 @@ get_header();
 						<a class="btn btn-link" href="<?php echo $opts['contact_url']; ?>">お申込みはこちら</a>
 					</div>
 					<div class="gauge">
-						<div id="seat-bar" style="right: <?php echo ((1 - $opts['seat_remain'] / $opts['seat_limit']) * 100); ?>%"></div>
+						<div id="seat-bar" style="right: <?php $per = round(((1 - $opts['seat_remain'] / $opts['seat_limit']) * 100), 1); echo $per > 0 ? $per : 0; ?>%"></div>
 						<p class="count"><strong><?php echo $opts['seat_remain']; ?>/<?php echo $opts['seat_limit']; ?></strong>人</p>
 					</div>
 					
