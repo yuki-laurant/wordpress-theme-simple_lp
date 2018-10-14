@@ -542,9 +542,9 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
+  color: deeppink; }
   a:visited {
-    color: purple; }
+    color: mediumvioletred; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
@@ -979,6 +979,11 @@ object {
 .ribbon .rb {
   font-weight: 500; }
 
+.center-content {
+  max-width: 425px;
+  margin-left: auto;
+  margin-right: auto; }
+
 .top-image {
   position: relative; }
   .top-image .lead {
@@ -1270,12 +1275,14 @@ object {
   left: 0.8rem;
   background: #fff; }
 
-.past .paper {
-  width: 86%;
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-  padding: 0.8rem 1rem;
-  margin: 1.4rem auto 4px; }
+.past {
+  margin-top: 3rem; }
+  .past .paper {
+    width: 86%;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    padding: 0.8rem 1rem;
+    margin: 1.4rem auto 4px; }
 
 .overview {
   background: url("./images/polygon.png") 85% bottom repeat;

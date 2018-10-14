@@ -33,6 +33,12 @@
   }
 }
 
+.center-content {
+  max-width: 425px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .top-image {
   position: relative;
   .lead {
@@ -400,6 +406,7 @@
 }
 
 .past {
+  margin-top: 3rem;
   .paper {
     width: $size__paper-width;
     background: rgba(255, 255, 255, 0.9);

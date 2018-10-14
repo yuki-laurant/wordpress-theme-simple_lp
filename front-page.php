@@ -18,7 +18,7 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-			<section class="top-image">
+			<section class="top-image center-content">
 				<img width="750" height="1200" alt="" src="<?php echo get_template_directory_uri(); ?>/images/top.png">
 				<div class="lead">
 					<p><strong><?php echo $startdate->format('n.j'); ?></strong><?php echo strtoupper($startdate->format('D')); ?></p>
@@ -26,7 +26,7 @@ get_header();
 					<p>イラストレーター交流会</p>
 				</div>
 			</section><!-- .top-image -->
-			<section class="news">
+			<section class="news center-content">
 				<div class="paper">
 					<header class="ribbon">
 						<div class="text ruby">
@@ -49,28 +49,30 @@ get_header();
 			</section><!-- .news -->
 			<section class="about-us">
 				<div class="tri top-left"></div>
-				<header class="ruby">
-					<div class="rt">ABOUT US</div>
-					<h2 class="rb">「いらばこ」とは</h2>
-				</header>
-				<div class="paper">
-					<p>「いらばこ」とは、「イラストの詰まった箱」という意味です。様々な個性を持ったイラストレーターさんが集まり、<span class="marker yellow">それぞれの感性が輝ける場にしたい</span>という思いから「いらばこ」という名前になりました。</p>
-					<p>イラストレーターさんに特化した交流会はまだまだ少ないのが現状です。
-					そこで、イラストレーターさんが安心して話せる場を提供したいと思い、いらばこを発足しました。
-					皆さんにとって「いらばこ」が、少しでも前に進むためのきっかけになればこれほど嬉しいことはありません。</p>
-					<p>どうぞよろしくお願いします！</p>
-				</div>
-				<div class="crystal">
-					<div class="pink">
-						<img alt="" width="94" height="86" src="<?php echo get_template_directory_uri(); ?>/images/crystal_pink.png">
+				<div class="center-content">
+					<header class="ruby">
+						<div class="rt">ABOUT US</div>
+						<h2 class="rb">「いらばこ」とは</h2>
+					</header>
+					<div class="paper">
+						<p>「いらばこ」とは、「イラストの詰まった箱」という意味です。様々な個性を持ったイラストレーターさんが集まり、<span class="marker yellow">それぞれの感性が輝ける場にしたい</span>という思いから「いらばこ」という名前になりました。</p>
+						<p>イラストレーターさんに特化した交流会はまだまだ少ないのが現状です。
+						そこで、イラストレーターさんが安心して話せる場を提供したいと思い、いらばこを発足しました。
+						皆さんにとって「いらばこ」が、少しでも前に進むためのきっかけになればこれほど嬉しいことはありません。</p>
+						<p>どうぞよろしくお願いします！</p>
 					</div>
-					<div class="blue">
-						<img alt="" width="83" height="73" src="<?php echo get_template_directory_uri(); ?>/images/crystal_blue.png">
+					<div class="crystal">
+						<div class="pink">
+							<img alt="" width="94" height="86" src="<?php echo get_template_directory_uri(); ?>/images/crystal_pink.png">
+						</div>
+						<div class="blue">
+							<img alt="" width="83" height="73" src="<?php echo get_template_directory_uri(); ?>/images/crystal_blue.png">
+						</div>
 					</div>
 				</div>
 				<div class="tri right-bottom"></div>
 			</section><!-- .about-us -->
-			<section class="benefits">
+			<section class="benefits center-content">
 				<h2>こんな方に<strong>オススメ！</strong></h2>
 				<div class="paper">
 					<ul class="list-check">
@@ -83,7 +85,7 @@ get_header();
 					</ul>
 				</div>
 			</section><!-- .benefits -->
-			<section class="irabako-contents">
+			<section class="irabako-contents center-content">
 				<header class="ribbon">
 					<div class="text ruby">
 						<div class="rt">CONTENTS</div>
@@ -120,7 +122,7 @@ get_header();
 					</div>
 				</div>
 			</section><!-- .irabako-contents -->
-			<section class="member">
+			<section class="member center-content">
 				<header class="ribbon">
 					<div class="text ruby">
 						<div class="rt">MEMBER</div>
@@ -192,7 +194,7 @@ get_header();
 					</div>
 				</div><!-- .profile -->
 			</section><!-- .member -->
-			<section class="voices">
+			<section class="voices center-content">
 				<header class="ribbon">
 					<div class="text ruby">
 						<div class="rt">VOICES</div>
@@ -215,7 +217,7 @@ get_header();
 					</p>
 				</div>
 			</section><!-- .voices -->
-			<section class="faq">
+			<section class="faq center-content">
 				<header class="ribbon">
 					<div class="text ruby">
 						<div class="rt">FAQ</div>
@@ -243,7 +245,7 @@ get_header();
 					<p class="answer">当交流会には人見知りの方も多くいらっしゃいますが、皆様終わる頃には笑顔で帰られています。どうぞご安心ください！</p>
 				</div>
 			</section><!-- .qanda -->
-			<section class="past">
+			<section class="past center-content">
 				<header class="ribbon">
 					<div class="text ruby">
 						<div class="rt">PASTEVENT</div>
@@ -256,53 +258,55 @@ get_header();
 			</section><!-- .past -->
 			<section class="overview">
 				<div class="tri top-left"></div>
-				<header class="ribbon">
-					<div class="text ruby">
-						<div class="rt">OVERVIEW</div>
-						<h2 class="rb">イベント概要</h2>
-					</div>
-				</header>
-				<div class="paper">
-					<section>
-						<h3><span class="marker yellow">日時</span></h3>
-						<p class="date"><?php echo $startdate->format('Y.n.j'); ?></p>
-						<p class="time"><?php echo $startdate->format('H:i'); ?>&nbsp;〜&nbsp;<?php echo $enddate->format('H:i'); ?></p>
-					</section>
-					<section>
-						<h3><span class="marker yellow">開催場所</span></h3>
-						<p>
-							<a href="http://mirai-lab.org/" target="_blank">みらい研究所<small><i class="fas fa-external-link-alt"></i></small></a><br>
-							<small>〒101-0051<br>
-							東京都千代田区神田神保町1-6 神保町サンビルディング 3F</small>
-						</p>
-						<div class="map">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6480.441823473638!2d139.759358!3d35.696181!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe5c7ea0795d1bfd3!2z44G_44KJ44GE44GR44KT77yIQ28gTGVhcm5pbmcgU3BhY2XjgIzjgb_jgonjgYTnoJTnqbbmiYDjgI3vvIk!5e0!3m2!1sja!2sjp!4v1538889407258" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<div class="center-content">
+					<header class="ribbon">
+						<div class="text ruby">
+							<div class="rt">OVERVIEW</div>
+							<h2 class="rb">イベント概要</h2>
 						</div>
-					</section>
-					<section>
-						<h3><span class="marker yellow">参加費</span></h3>
-						<p>2,500円</p>
-					</section>
-					<section>
-						<h3><span class="marker yellow">持ち物</span></h3>
-						<ul>
-							<li>ポートフォリオ</li>
-							<li>名刺</li>
-						</ul>
-					</section>
-					<section>
-						<h3><span class="marker yellow">タイムテーブル</span></h3>
-						<ul class="timetable">
-							<?php
-								$items = explode("\n", $opts['time_table']);
-								for($i = 0, $len = count($items); $i < $len; $i++):
-								?>
-									<li><?php echo preg_replace('/^(.+) +/s', '${1}&nbsp;&nbsp;', $items[$i]); ?></li>
+					</header>
+					<div class="paper">
+						<section>
+							<h3><span class="marker yellow">日時</span></h3>
+							<p class="date"><?php echo $startdate->format('Y.n.j'); ?></p>
+							<p class="time"><?php echo $startdate->format('H:i'); ?>&nbsp;〜&nbsp;<?php echo $enddate->format('H:i'); ?></p>
+						</section>
+						<section>
+							<h3><span class="marker yellow">開催場所</span></h3>
+							<p>
+								<a href="http://mirai-lab.org/" target="_blank">みらい研究所<small><i class="fas fa-external-link-alt"></i></small></a><br>
+								<small>〒101-0051<br>
+								東京都千代田区神田神保町1-6 神保町サンビルディング 3F</small>
+							</p>
+							<div class="map">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6480.441823473638!2d139.759358!3d35.696181!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe5c7ea0795d1bfd3!2z44G_44KJ44GE44GR44KT77yIQ28gTGVhcm5pbmcgU3BhY2XjgIzjgb_jgonjgYTnoJTnqbbmiYDjgI3vvIk!5e0!3m2!1sja!2sjp!4v1538889407258" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+							</div>
+						</section>
+						<section>
+							<h3><span class="marker yellow">参加費</span></h3>
+							<p>2,500円</p>
+						</section>
+						<section>
+							<h3><span class="marker yellow">持ち物</span></h3>
+							<ul>
+								<li>ポートフォリオ</li>
+								<li>名刺</li>
+							</ul>
+						</section>
+						<section>
+							<h3><span class="marker yellow">タイムテーブル</span></h3>
+							<ul class="timetable">
 								<?php
-								endfor;
-							?>
-						</ul>
-						<small>※当日状況により前後する可能性がございます</small>
+									$items = explode("\n", $opts['time_table']);
+									for($i = 0, $len = count($items); $i < $len; $i++):
+									?>
+										<li><?php echo preg_replace('/^(.+) +/s', '${1}&nbsp;&nbsp;', $items[$i]); ?></li>
+									<?php
+									endfor;
+								?>
+							</ul>
+							<small>※当日状況により前後する可能性がございます</small>
+						</div>
 					</section>
 				</div>
 			</section><!-- .overview -->
