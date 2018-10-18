@@ -157,7 +157,7 @@ get_header();
 							<img alt="" width="94" height="86" src="<?php echo get_template_directory_uri(); ?>/images/crystal_pink.png">
 						</div>
 						<div class="shot">
-							<img alt="マスノナツキ" width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/images/icon-bibico.png">
+							<img alt="マスノナツキ" width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/images/icon-masuno.jpg">
 						</div>
 						<div class="blue">
 							<img alt="" width="83" height="73" src="<?php echo get_template_directory_uri(); ?>/images/crystal_blue.png">
@@ -171,28 +171,6 @@ get_header();
 						<p>接客販売業を経てフリーランスイラストレーターへ。前職では色彩知識社内講師を担当。「パルミーオンラインイラスト講座」コピック色塗り講座講師・パーソナルカラー×イラスト彩色セミナー主催・企業イメージイラスト制作などを担当。作品はアナログ制作を主流にしており、優しい滲み感や透明感のある表現を得意とする。</p>
 					</div>
 				</div><!-- .profile -->
-				<div class="profile">
-					<div class="image">
-						<div class="pink">
-							<img alt="" width="94" height="86" src="<?php echo get_template_directory_uri(); ?>/images/crystal_pink.png">
-						</div>
-						<div class="shot">
-							<img alt="谷野文亮" width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/images/icon-bibico.png">
-						</div>
-						<div class="blue">
-							<img alt="" width="83" height="73" src="<?php echo get_template_directory_uri(); ?>/images/crystal_blue.png">
-						</div>
-					</div>
-					<div class="name ruby">
-						<div class="rt">やの&nbsp;ふみあき</div>
-						<h2 class="rb marker yellow">谷野文亮</h2>
-					</div>
-					<div class="paper">
-						<p>現役漫画家と二人暮らしをするアニメ会社の社長。<br>
-						映像の他にも、キャラクターデザインや漫画広告のディレクションも行なっている。<br>
-						事業を進めながら、幅広いスキルを生かして、多方面のプロジェクトで技術的なサポートをしている。
-					</div>
-				</div><!-- .profile -->
 			</section><!-- .member -->
 			<section class="voices center-content">
 				<header class="ribbon">
@@ -204,7 +182,7 @@ get_header();
 				<div class="voice">
 					<div class="voice-header">
 						<div class="shot">
-							<img alt="くろずさん" width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/images/icon-bibico.png">
+							<img alt="くろずさん" width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/images/icon-kurozu.png">
 						</div>
 						<div class="profile">
 							<div class="job">学生</div>
