@@ -135,7 +135,7 @@ get_header();
 							<img alt="" width="94" height="86" src="<?php echo get_template_directory_uri(); ?>/images/crystal_pink.png">
 						</div>
 						<div class="shot">
-						<img alt="bibico" width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/images/icon-bibico.png">
+						<img alt="bibico" width="256" height="256" src="<?php echo get_template_directory_uri(); ?>/images/icon-bibico.png">
 						</div>
 						<div class="blue">
 							<img alt="" width="83" height="73" src="<?php echo get_template_directory_uri(); ?>/images/crystal_blue.png">
@@ -157,7 +157,7 @@ get_header();
 							<img alt="" width="94" height="86" src="<?php echo get_template_directory_uri(); ?>/images/crystal_pink.png">
 						</div>
 						<div class="shot">
-							<img alt="マスノナツキ" width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/images/icon-masuno.jpg">
+							<img alt="マスノナツキ" width="256" height="256" src="<?php echo get_template_directory_uri(); ?>/images/icon-masuno.png">
 						</div>
 						<div class="blue">
 							<img alt="" width="83" height="73" src="<?php echo get_template_directory_uri(); ?>/images/crystal_blue.png">
@@ -182,7 +182,7 @@ get_header();
 				<div class="voice">
 					<div class="voice-header">
 						<div class="shot">
-							<img alt="くろずさん" width="300" height="300" src="<?php echo get_template_directory_uri(); ?>/images/icon-kurozu.png">
+							<img alt="くろずさん" width="140" height="140" src="<?php echo get_template_directory_uri(); ?>/images/icon-kurozu.png">
 						</div>
 						<div class="profile">
 							<div class="job">学生</div>
