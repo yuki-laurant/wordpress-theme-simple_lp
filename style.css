@@ -958,20 +958,19 @@ object {
 #site-navigation, .site-description {
   display: none; }
 
-#masthead {
-  position: fixed;
+.home #masthead {
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  background: #fff;
-  z-index: 999; }
-  #masthead .site-title {
-    width: 100px;
+  margin-top: 0.5rem;
+  z-index: 1; }
+  .home #masthead .site-title {
+    width: 50%;
     margin: 0 auto; }
-    #masthead .site-title .custom-logo-link {
-      display: grid; }
+    .home #masthead .site-title .custom-logo-link {
+      display: grid;
+      justify-content: center; }
 
 .home .content-area {
   background: #fffff8; }
@@ -986,36 +985,40 @@ object {
 
 .top-image {
   position: relative; }
-  .top-image .lead {
+  .top-image .lead-wrap {
     position: absolute;
-    color: #555;
     top: 360px;
-    left: 20px;
+    left: 0;
+    right: 0;
     display: flex;
-    align-items: flex-start;
-    flex-direction: column; }
-    .top-image .lead p {
-      background: #fff;
-      line-height: 1;
-      padding: 0.2rem 0.3rem 0;
-      margin: 0.2rem 0;
-      font-weight: bold; }
-    .top-image .lead p:first-child {
-      font-size: 19.5px;
-      font-size: 1.21875rem;
-      letter-spacing: .2em; }
-      .top-image .lead p:first-child strong {
-        font-size: 39px;
-        font-size: 2.4375rem;
+    justify-content: center; }
+    .top-image .lead-wrap .lead {
+      color: #555;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column; }
+      .top-image .lead-wrap .lead p {
+        background: #fff;
+        line-height: 1;
+        padding: 0.2rem 0.3rem 0;
+        margin: 0.2rem 0;
+        font-weight: bold; }
+      .top-image .lead-wrap .lead p:first-child {
+        font-size: 19.5px;
+        font-size: 1.21875rem;
         letter-spacing: .2em; }
-    .top-image .lead p:nth-child(2) {
-      font-size: 21.75px;
-      font-size: 1.35938rem;
-      letter-spacing: .13em; }
-    .top-image .lead p:last-child {
-      font-size: 26.4px;
-      font-size: 1.65rem;
-      letter-spacing: .1em; }
+        .top-image .lead-wrap .lead p:first-child strong {
+          font-size: 39px;
+          font-size: 2.4375rem;
+          letter-spacing: .2em; }
+      .top-image .lead-wrap .lead p:nth-child(2) {
+        font-size: 21.75px;
+        font-size: 1.35938rem;
+        letter-spacing: .13em; }
+      .top-image .lead-wrap .lead p:last-child {
+        font-size: 26.4px;
+        font-size: 1.65rem;
+        letter-spacing: .1em; }
 
 .news .paper {
   width: 86%;
@@ -1342,13 +1345,13 @@ object {
 #fix-btn {
   position: fixed;
   right: 0;
-  bottom: 0px;
+  bottom: 0;
   left: 0;
   text-align: center;
   font-size: 18px;
   font-size: 1.125rem;
   z-index: 999;
-  transition: opacity .4s; }
+  transition: opacity .4s, visibility .4s; }
   #fix-btn .btn {
     padding-left: 5em;
     padding-right: 5em; }
@@ -1357,3 +1360,19 @@ object {
       width: 40px;
       left: 1.4em;
       bottom: .2em; }
+
+#fix-head {
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background: #fff;
+  z-index: 999;
+  transition: bottom .2s, visibility .2s; }
+  #fix-head .site-title {
+    width: 100px;
+    margin: 0 auto; }
+    #fix-head .site-title .custom-logo-link {
+      display: grid;
+      justify-content: center; }

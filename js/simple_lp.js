@@ -5,6 +5,31 @@
  */
 ( function() {
   //------------------------------------------------------------
+  // 追随タイトル表示処理
+  //------------------------------------------------------------
+  var fixhead = document.getElementById('fix-head');
+  if(fixhead) {
+    // 初期化
+    fixhead.style.setProperty('bottom', window.innerHeight + 'px');
+    fixhead.style.setProperty('visibility', 'visible');
+    // スクロールイベントを設定
+    var frameId_fixhead = null;
+    window.addEventListener('scroll', function() {
+      // 表示間隔以上では処理しない
+      cancelAnimationFrame(frameId_fixhead);
+      frameId_fixhead = requestAnimationFrame(function() {
+        
+        if(window.scrollY > 100) {
+          fixhead.style.setProperty('bottom', (window.innerHeight - fixhead.clientHeight)  + 'px');
+          fixhead.style.setProperty('visibility', 'visible');
+        } else {
+          fixhead.style.setProperty('bottom', window.innerHeight + 'px');
+          fixhead.style.setProperty('visibility', 'hidden');
+        }
+      });
+    });
+  }
+  //------------------------------------------------------------
   // 追随ボタン表示処理
   //------------------------------------------------------------
   var fixbtn = document.getElementById('fix-btn');
@@ -22,15 +47,10 @@
           fixbtn.style.setProperty('visibility', 'visible');
           fixbtn.style.setProperty('opacity', '1');
         } else {
+          fixbtn.style.setProperty('visibility', 'hidden');
           fixbtn.style.setProperty('opacity', '0');
         }
       });
-    });
-    // 非表示時はアニメーション後にvisiblityをhiddenに変更する
-    fixbtn.addEventListener('transitionend', function() {
-      if(this.style.getPropertyValue('opacity') === '0') {
-        this.style.setProperty('visibility', 'hidden');
-      }
     });
   }
 

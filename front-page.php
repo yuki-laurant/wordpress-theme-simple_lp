@@ -20,10 +20,12 @@ get_header();
 		<main id="main" class="site-main">
 			<section class="top-image center-content">
 				<img width="750" height="1200" alt="" src="<?php echo get_template_directory_uri(); ?>/images/top.png">
-				<div class="lead">
-					<p><strong><?php echo $startdate->format('n.j'); ?></strong><?php echo strtoupper($startdate->format('D')); ?></p>
-					<p>初心者から上級者まで集まる</p>
-					<p>イラストレーター交流会</p>
+				<div class="lead-wrap">
+					<div class="lead">
+						<p><strong><?php echo $startdate->format('n.j'); ?></strong><?php echo strtoupper($startdate->format('D')); ?></p>
+						<p>初心者から上級者まで集まる</p>
+						<p>イラストレーター交流会</p>
+					</div>
 				</div>
 			</section><!-- .top-image -->
 			<section class="news center-content">
@@ -290,6 +292,17 @@ get_header();
 			</section><!-- .overview -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+	<div id="fix-head">
+		<?php
+		if(has_custom_logo()) {
+			$brand = get_custom_logo();
+		} else {
+			$brand = '<a href="'. esc_url( home_url( '/' ) ) .'" rel="home">'. bloginfo( 'name' ) .'</a>';
+		}
+		?>
+		<p class="site-title"><?php echo $brand; ?></p>
+	</div><!-- #fix-head -->
 
 	<div id="fix-btn" style="opacity: 0; visibility: hidden;">
 		<a class="btn btn-link" href="<?php echo $opts['contact_url']; ?>"><img alt="" class="akane-sd" src="<?php echo get_template_directory_uri(); ?>/images/akane-sd.png" width="167" height="292">お申込みはこちら</a>
