@@ -10,8 +10,7 @@
   var fixhead = document.getElementById('fix-head');
   if(fixhead) {
     // 初期化
-    fixhead.style.setProperty('bottom', window.innerHeight + 'px');
-    fixhead.style.setProperty('visibility', 'visible');
+    fixhead.style.setProperty('top', (fixhead.clientHeight * -1) + 'px');
     // スクロールイベントを設定
     var frameId_fixhead = null;
     window.addEventListener('scroll', function() {
@@ -20,10 +19,10 @@
       frameId_fixhead = requestAnimationFrame(function() {
         
         if(window.scrollY > 100) {
-          fixhead.style.setProperty('bottom', (window.innerHeight - fixhead.clientHeight)  + 'px');
+          fixhead.style.setProperty('top', '0');
           fixhead.style.setProperty('visibility', 'visible');
         } else {
-          fixhead.style.setProperty('bottom', window.innerHeight + 'px');
+          fixhead.style.setProperty('top', (fixhead.clientHeight * -1) + 'px');
           fixhead.style.setProperty('visibility', 'hidden');
         }
       });

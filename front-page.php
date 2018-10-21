@@ -293,7 +293,7 @@ get_header();
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<div id="fix-head">
+	<div id="fix-head" style="visibility: hidden;">
 		<?php
 		if(has_custom_logo()) {
 			$brand = get_custom_logo();

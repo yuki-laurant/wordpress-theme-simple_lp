@@ -1369,7 +1369,7 @@ object {
   padding-bottom: 0.5rem;
   background: #fff;
   z-index: 999;
-  transition: bottom .2s, visibility .2s; }
+  transition: top .2s, visibility .2s; }
   #fix-head .site-title {
     width: 100px;
     margin: 0 auto; }
