@@ -4,6 +4,7 @@ var autoprefixer = require("gulp-autoprefixer");
 var uglify = require("gulp-uglify");
 var browser = require("browser-sync");
 var plumber = require("gulp-plumber");
+var cleancss = require('gulp-clean-css');
 
 // 定数
 var js_globs = ["js/**/*.js", "!js/min/**/*.js"];
@@ -17,6 +18,7 @@ gulp.task("sass", function() {
         .pipe(plumber())
         .pipe(sass())
         .pipe(autoprefixer())
+        .pipe(cleancss())
         .pipe(gulp.dest("./"))
         .pipe(browser.reload({stream:true}));
 });
