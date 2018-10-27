@@ -284,12 +284,27 @@
         display: inline;
       }
     }
+    .links {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      @include font-size(1.6);
+      li {
+        flex: 0 0 2em;
+        text-align: center;
+        a, &:visited {
+          color: $color__text-main;
+        }
+      }
+    }
     .paper {
       width: $size__paper-width;
       background: #fff;
       filter: drop-shadow($color__shadow);
       padding: 1px 1rem;
-      margin: 2rem auto 3rem;
+      margin: 1.4rem auto 3rem;
     }
   }
 }

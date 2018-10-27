@@ -147,6 +147,10 @@ get_header();
 						<div class="rt">びびこ</div>
 						<h2 class="rb marker yellow">bibico</h2>
 					</div>
+					<ul class="links">
+						<li><a href="https://bibicoart.com/" target="_blank"><i class="fas fa-home"></i></a></li>
+						<li><a href="https://twitter.com/bibiccoo" target="_blank"><i class="fab fa-twitter"></i></a></li>
+					</ul>
 					<div class="paper">
 						<p>ゲーム会社社員からフリーランスのイラストレーターへ転身。<br>
 						「富士山コスプレ世界大会」キャラクターデザイン・ポスター・グッズ制作、「パルミーオンラインイラスト講座」キャラクターデザイン講座の講師を務める。<br>
@@ -169,6 +173,10 @@ get_header();
 						<div class="rt">ますの&nbsp;なつき</div>
 						<h2 class="rb marker yellow">マスノナツキ</h2>
 					</div>
+					<ul class="links">
+						<li><a href="https://natsukimasuno.wixsite.com/chameleoncat" target="_blank"><i class="fas fa-home"></i></a></li>
+						<li><a href="https://twitter.com/nacchon72" target="_blank"><i class="fab fa-twitter"></i></a></li>
+					</ul>
 					<div class="paper">
 						<p>接客販売業を経てフリーランスイラストレーターへ。前職では色彩知識社内講師を担当。「パルミーオンラインイラスト講座」コピック色塗り講座講師・パーソナルカラー×イラスト彩色セミナー主催・企業イメージイラスト制作などを担当。作品はアナログ制作を主流にしており、優しい滲み感や透明感のある表現を得意とする。</p>
 					</div>
