@@ -63,11 +63,13 @@
   line-height: 1;
   .rt {
     @include font-size(0.6);
+    text-indent: .4em;
     letter-spacing: .4em;
     margin: 0 0 .4em;
   }
   .rb {
     @include font-size(1.2);
+    text-indent: .2em;
     letter-spacing: .2em;
     margin: 0;
   }

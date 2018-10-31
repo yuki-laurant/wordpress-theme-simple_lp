@@ -290,10 +290,10 @@
       padding: 0;
       display: flex;
       justify-content: center;
-      @include font-size(1.6);
+      @include font-size(1.2);
       li {
-        flex: 0 0 2em;
         text-align: center;
+        margin: 0 .4em;
         a, &:visited {
           color: $color__text-main;
         }

@@ -203,7 +203,49 @@ get_header();
 						私は美大生なのにデッサンができない、絵が周りと比べて劣っていると感じ悩んでいました。<br>
 						いらばこで、他作家さんに沢山のアドバイスとモチベをいただき、絵に対する意識が変わって、今ではお仕事をもらえるようになりました！悩みを共有することで新しい道がひらけると身を以て体験しました。
 					</p>
-				</div>
+				</div><!-- .voice -->
+				<div class="voice">
+					<div class="voice-header">
+						<div class="shot">
+							<img alt="匿名さん" width="140" height="140" src="<?php echo get_template_directory_uri(); ?>/images/icon-anonymous-woman.png">
+						</div>
+						<div class="profile">
+							<div class="job">フリーランス</div>
+							<h3 class="name"><span class="marker yellow">イラストレーター<span class="smaller">さん</span></span></h3>
+						</div>
+					</div>
+					<p class="balloon top-left">
+						非常に楽しい時間でした！あっという間で本当に時間が一瞬で過ぎてしまいました…。また来ます！！
+					</p>
+				</div><!-- .voice -->
+				<div class="voice">
+					<div class="voice-header">
+						<div class="shot">
+							<img alt="匿名さん" width="140" height="140" src="<?php echo get_template_directory_uri(); ?>/images/icon-anonymous-woman.png">
+						</div>
+						<div class="profile">
+							<div class="job">フリーランス志望</div>
+							<h3 class="name"><span class="marker yellow">イラストレーター<span class="smaller">さん</span></span></h3>
+						</div>
+					</div>
+					<p class="balloon top-left">
+						たくさんの方とお話できて、同じ悩みを持っていることや、解決方法を知ることができて良い場でした。
+					</p>
+				</div><!-- .voice -->
+				<div class="voice">
+					<div class="voice-header">
+						<div class="shot">
+							<img alt="匿名さん" width="140" height="140" src="<?php echo get_template_directory_uri(); ?>/images/icon-anonymous-woman.png">
+						</div>
+						<div class="profile">
+							<div class="job">フリーランス</div>
+							<h3 class="name"><span class="marker yellow">イラストレーター<span class="smaller">さん</span></span></h3>
+						</div>
+					</div>
+					<p class="balloon top-left">
+						多くの意見とアドバイスをいただけてとても勉強になりました。今後の参考にしていきます。
+					</p>
+				</div><!-- .voice -->
 			</section><!-- .voices -->
 			<section class="faq center-content">
 				<header class="ribbon">
