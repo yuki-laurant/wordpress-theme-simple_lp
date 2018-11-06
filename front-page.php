@@ -40,7 +40,7 @@ get_header();
 					<p class="date">次回開催<?php echo $startdate->format('n月j日'); ?>(<?php echo $wp_locale->get_weekday_abbrev($wp_locale->get_weekday($startdate->format('w'))); ?>)</p>
 					<p class="time"><?php echo $startdate->format('H:i'); ?>〜<?php echo $enddate->format('H:i'); ?></p>
 					<div class="btn-wrap">
-						<a class="btn btn-link" href="<?php echo $opts['contact_url']; ?>">お申込みはこちら</a>
+<a class="btn btn-link" href="<?php echo $opts['contact_url']; ?>"<?php if(!is_user_logged_in()): ?> onclick="ga('send', 'event', 'Contact', 'jump');"<?php endif; ?>>お申込みはこちら</a>
 					</div>
 					<div class="gauge">
 						<div id="seat-bar" style="right: <?php $per = round(((1 - $opts['seat_remain'] / $opts['seat_limit']) * 100), 1); echo $per > 0 ? $per : 0; ?>%"></div>
@@ -355,7 +355,7 @@ get_header();
 	</div><!-- #fix-head -->
 
 	<div id="fix-btn" style="opacity: 0; visibility: hidden;">
-		<a class="btn btn-link" href="<?php echo $opts['contact_url']; ?>"><img alt="" class="akane-sd" src="<?php echo get_template_directory_uri(); ?>/images/akane-sd.png" width="167" height="292">お申込みはこちら</a>
+		<a class="btn btn-link" href="<?php echo $opts['contact_url']; ?>"<?php if(!is_user_logged_in()): ?> onclick="ga('send', 'event', 'Contact', 'jump');"<?php endif; ?>><img alt="" class="akane-sd" src="<?php echo get_template_directory_uri(); ?>/images/akane-sd.png" width="167" height="292">お申込みはこちら</a>
 	</div><!-- #fix-btn -->
 
 <?php
