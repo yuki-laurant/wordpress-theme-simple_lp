@@ -245,7 +245,7 @@
   }
   .trans-paper {
     width: $size__paper-width;
-    margin: 1.4rem auto 4px;
+    margin: 1.4rem auto 0;
     padding: 1px 1rem;
   }
   .intro {
@@ -253,6 +253,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1.4rem auto 0;
     .subtitle {
       @include font-size(0.7);
       margin: 0 0 0.2rem;

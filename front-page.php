@@ -133,7 +133,7 @@ get_header();
 					</div>
 				</header>
 				<div class="center-content">
-					<div class="intro trans-paper">
+					<div class="intro">
 						<p class="subtitle">SNS時代に生まれたイラストレーターの為の</p>
 						<p class="title">SNSを活用したお仕事獲得術</p>
 					</div>
