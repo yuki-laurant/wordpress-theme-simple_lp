@@ -231,6 +231,129 @@
   }
 }
 
+.special-event {
+  background: url("./images/polygon-dark.png") 10% top repeat;
+  color: #fff;
+  .ribbon {
+    .text {
+      background-color: #015570;
+    }
+    &::before, &::after {
+      border-top-color: rgb(1, 85, 112);
+      border-bottom-color: #015570;
+    }
+  }
+  .trans-paper {
+    width: $size__paper-width;
+    margin: 1.4rem auto 4px;
+    padding: 1px 1rem;
+  }
+  .intro {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .subtitle {
+      @include font-size(0.7);
+      margin: 0 0 0.2rem;
+    }
+    .title {
+      position: relative;
+      @include font-size(1.3);
+      margin: 0;
+      padding: 0 0.4em;
+      line-height: 1.5;
+      &::before, &::after {
+        content: '';
+        position: absolute;
+        width: 0.6em;
+        height: 1em;
+      }
+      &::before {
+        top: 0;
+        left: 0;
+        border-top: 1px solid #fff;
+        border-left: 1px solid #fff;
+      }
+      &::after {
+        bottom: 0;
+        right: 0;
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+      }
+    }
+  }
+  .head-wrap {
+    text-align: center;
+    margin: 2rem 0 0;
+    h3 {
+      display: inline;
+      @include font-size(1.1);
+      padding: 0 0.4em 0.2em;
+    }
+  }
+  .paper {
+    width: $size__paper-width;
+    background: #fff;
+    box-shadow: $color__shadow;
+    padding: 1px 1rem;
+    margin: 1.5rem auto;
+    color: $color__text-main;
+  }
+  .profile {
+    margin-top: 1.5rem;
+    .image {
+      display: flex;
+      justify-content: center;
+      width: $size__paper-width;
+      margin: 0 auto 1rem;
+      .shot {
+        position: relative;
+        width: $size__shot-size;
+        height: #{$size__shot-size * 1.1};
+        img {
+          position: relative;
+          border-radius: 50%;
+          border: 3px #fff solid;
+          z-index: 1;
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          width: $size__shot-size;
+          height: $size__shot-size;
+          top: #{$size__shot-size / 10};
+          left: #{$size__shot-size / 10};
+          border-radius: 50%;
+          background-image: linear-gradient(
+            45deg,
+            #fff 25%,
+            transparent 25%, transparent 50%,
+            #fff 50%, #fff 75%,
+            transparent 75%, transparent
+          );
+          background-size: 10px 10px;
+        }
+      }
+    }
+    .links {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      @include font-size(1.2);
+      li {
+        text-align: center;
+        margin: 0 .4em;
+        a, &:visited {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
 .member {
   header {
     margin-bottom: 2rem;

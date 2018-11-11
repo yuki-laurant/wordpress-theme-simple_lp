@@ -124,6 +124,52 @@ get_header();
 					</div>
 				</div>
 			</section><!-- .irabako-contents -->
+			<section class="special-event">
+				<div class="tri top-left"></div>
+				<header class="ribbon">
+					<div class="text ruby">
+						<div class="rt">SPECIAL</div>
+						<h2 class="rb">特別企画</h2>
+					</div>
+				</header>
+				<div class="center-content">
+					<div class="intro trans-paper">
+						<p class="subtitle">SNS時代に生まれたイラストレーターの為の</p>
+						<p class="title">SNSを活用したお仕事獲得術</p>
+					</div>
+					<div class="head-wrap">
+						<h3 class="marker darkblue">企画内容</h3>
+					</div>
+					<div class="paper">
+						<div class="head-wrap">
+							<h3 class="marker yellow">好き×得意で仕事は創れる！</h3>
+						</div>
+						<p>仕事の半分以上をSNSから受注する講師が、SNSを楽しみながら活用する方法をお話しします。元接客業のコピックイラストレーターがお贈りする、「好き×得意」で仕事を創るライトニングトーク！</p>
+					</div>
+					<div class="head-wrap">
+						<h3 class="marker darkblue">講師紹介</h3>
+					</div>
+					<div class="profile">
+						<div class="image">
+							<div class="shot">
+								<img alt="マスノナツキ" width="256" height="256" src="<?php echo get_template_directory_uri(); ?>/images/icon-masuno.png">
+							</div>
+						</div>
+						<div class="name ruby">
+							<div class="rt">ますの&nbsp;なつき</div>
+							<h2 class="rb">マスノナツキ</h2>
+						</div>
+						<ul class="links">
+							<li><a href="https://natsukimasuno.wixsite.com/chameleoncat" target="_blank"><i class="fas fa-home"></i></a></li>
+							<li><a href="https://twitter.com/nacchon72" target="_blank"><i class="fab fa-twitter"></i></a></li>
+						</ul>
+						<div class="trans-paper">
+							<p>接客販売業を経てフリーランスイラストレーターへ。前職では色彩知識社内講師を担当。「パルミーオンラインイラスト講座」コピック色塗り講座講師・パーソナルカラー×イラスト彩色セミナー主催・企業イメージイラスト制作などを担当。作品はアナログ制作を主流にしており、優しい滲み感や透明感のある表現を得意とする。</p>
+						</div>
+					</div><!-- .profile -->
+				</div>
+				<div class="tri right-bottom"></div>
+			</section><!-- .special-event -->
 			<section class="member center-content">
 				<header class="ribbon">
 					<div class="text ruby">
