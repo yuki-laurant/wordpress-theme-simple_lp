@@ -245,8 +245,11 @@
   }
   .trans-paper {
     width: $size__paper-width;
-    margin: 1.4rem auto 0;
-    padding: 1px 1rem;
+    margin: 0.6rem auto 0;
+    padding: 0 1rem;
+    p {
+      margin: 0;
+    }
   }
   .intro {
     text-align: center;
