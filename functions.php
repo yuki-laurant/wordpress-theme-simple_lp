@@ -120,9 +120,7 @@ add_action( 'widgets_init', 'simple_lp_theme_widgets_init' );
  * Enqueue scripts and styles.
  */
 function simple_lp_theme_scripts() {
-	wp_enqueue_style( 'simple_lp-theme-font-awesome', 'https://use.fontawesome.com/releases/v5.3.1/css/all.css' );
-
-	wp_enqueue_style( 'simple_lp-theme-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'simple_lp-theme-style', get_stylesheet_uri(), array(), filemtime( get_stylesheet_directory(). '/style.css') );
 
 	wp_enqueue_script( 'simple_lp-theme-navigation', get_template_directory_uri() . '/js/min/navigation.js', array(), '20151215', true );
 
