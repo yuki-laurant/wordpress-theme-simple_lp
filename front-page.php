@@ -142,9 +142,9 @@ get_header();
 					</div>
 					<div class="paper">
 						<div class="head-wrap">
-							<h3 class="marker yellow">好き×得意で仕事は創れる！</h3>
+							<h3 class="marker yellow">好き×得意で仕事を獲得！</h3>
 						</div>
-						<p>仕事の半分以上をSNSから受注する講師が、SNSを楽しみながら活用する方法をお話しします。元接客業のコピックイラストレーターがお贈りする、「好き×得意」で仕事を創るライトニングトーク！</p>
+						<p>仕事の半分以上をSNSから受注する講師が、SNSを楽しみながら活用する方法をお話しします。元接客業のコピックイラストレーターがお贈りする、「好き×得意」で仕事を獲得するライトニングトーク！</p>
 					</div>
 					<div class="head-wrap">
 						<h3 class="marker darkblue">講師紹介</h3>
