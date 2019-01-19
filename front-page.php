@@ -37,17 +37,7 @@ get_header();
 						</div>
 					</header>
 					<p class="title"><?php echo $opts['past_count']; ?></p>
-					<p class="date">次回開催<?php echo $startdate->format('n月j日'); ?>(<?php echo $wp_locale->get_weekday_abbrev($wp_locale->get_weekday($startdate->format('w'))); ?>)</p>
-					<p class="time"><?php echo $startdate->format('H:i'); ?>〜<?php echo $enddate->format('H:i'); ?></p>
-					<!-- <div class="btn-wrap">
-<a class="btn btn-link" href="<?php echo $opts['contact_url']; ?>"<?php if(!is_user_logged_in()): ?> onclick="ga('send', 'event', 'Contact', 'jump');"<?php endif; ?>>お申込みはこちら</a>
-					</div> -->
-					<p>お申し込み開始予定：1/12</p>
-					<div class="gauge">
-						<div id="seat-bar" style="right: <?php $per = round(((1 - $opts['seat_remain'] / $opts['seat_limit']) * 100), 1); echo $per > 0 ? $per : 0; ?>%"></div>
-						<p class="count"><strong><?php echo $opts['seat_remain']; ?>/<?php echo $opts['seat_limit']; ?></strong>人</p>
-					</div>
-					
+					<p class="time">次回開催をお待ちください</p>
 				</div>
 			</section><!-- .news -->
 			<section class="about-us">
@@ -125,52 +115,6 @@ get_header();
 					</div>
 				</div>
 			</section><!-- .irabako-contents -->
-			<section class="special-event">
-				<div class="tri top-left"></div>
-				<header class="ribbon">
-					<div class="text ruby">
-						<div class="rt">SPECIAL</div>
-						<h2 class="rb">特別企画</h2>
-					</div>
-				</header>
-				<div class="center-content">
-					<div class="intro">
-						<p class="subtitle">SNS時代に生まれたイラストレーターの為の</p>
-						<p class="title">SNSを活用したお仕事獲得術</p>
-					</div>
-					<div class="head-wrap">
-						<h3 class="marker darkblue">企画内容</h3>
-					</div>
-					<div class="paper">
-						<div class="head-wrap">
-							<h3 class="marker yellow">好き×得意で仕事を獲得！</h3>
-						</div>
-						<p>仕事の半分以上をSNSから受注する講師が、SNSを楽しみながら活用する方法をお話しします。元接客業のコピックイラストレーターがお贈りする、「好き×得意」で仕事を獲得するライトニングトーク！</p>
-					</div>
-					<div class="head-wrap">
-						<h3 class="marker darkblue">講師紹介</h3>
-					</div>
-					<div class="profile">
-						<div class="image">
-							<div class="shot">
-								<img alt="マスノナツキ" width="256" height="256" src="<?php echo get_template_directory_uri(); ?>/images/icon-masuno.png">
-							</div>
-						</div>
-						<div class="name ruby">
-							<div class="rt">ますの&nbsp;なつき</div>
-							<h2 class="rb">マスノナツキ</h2>
-						</div>
-						<ul class="links">
-							<li><a href="https://natsukimasuno.wixsite.com/chameleoncat" target="_blank"><i class="fas fa-home"></i></a></li>
-							<li><a href="https://twitter.com/nacchon72" target="_blank"><i class="fab fa-twitter"></i></a></li>
-						</ul>
-						<div class="trans-paper">
-							<p>接客販売業を経てフリーランスイラストレーターへ。前職では色彩知識社内講師を担当。「パルミーオンラインイラスト講座」コピック色塗り講座講師・パーソナルカラー×イラスト彩色セミナー主催・企業イメージイラスト制作などを担当。作品はアナログ制作を主流にしており、優しい滲み感や透明感のある表現を得意とする。</p>
-						</div>
-					</div><!-- .profile -->
-				</div>
-				<div class="tri right-bottom"></div>
-			</section><!-- .special-event -->
 			<section class="member center-content">
 				<header class="ribbon">
 					<div class="text ruby">
